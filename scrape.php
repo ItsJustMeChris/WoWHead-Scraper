@@ -266,7 +266,7 @@ if (!empty($html))
 
 if (isset($_GET['json']))
 	{
-	echo json_encode($jsonArray);
+	echo json_encode($jsonArray, JSON_UNESCAPED_UNICODE|JSON_UNESCAPED_SLASHES);
 	}
 
 ?>
